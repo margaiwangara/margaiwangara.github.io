@@ -30,6 +30,7 @@ a {
   margin: 1rem auto;
   background: var(--primary);
   padding: 1rem;
+  justify-content: center;
 }
 
 header {
@@ -369,6 +370,7 @@ header .header-content h3 {
   display: flex;
   flex-direction: column;
   line-height: 2.7rem;
+  justify-content: flex-start;
 }
 .contact .contact-left > h2 {
   font-weight: 800;
@@ -378,6 +380,12 @@ header .header-content h3 {
   letter-spacing: 0.04rem;
 }
 
+.contact .contact-left > .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .contact .contact-left > .details > h5 {
   font-weight: 400;
   word-spacing: 0.2rem;
@@ -385,13 +393,14 @@ header .header-content h3 {
   font-size: 0.8rem;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.contact .contact-left > .details > h5:first-child {
+/* .contact .contact-left > .details > h5:first-child {
   /* line-height: 1.1rem; */
-  /* text-transform: capitalize; */
-}
-
+/* text-transform: capitalize; 
+} 
+*/
 .contact .contact-left > .details > h5 > i {
   margin-right: 0.5rem;
   color: #08415c;
@@ -443,10 +452,10 @@ header .header-content h3 {
 }
 
 .contact .contact-right .bottom {
-  display: grid;
-  grid-row-gap: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
-  grid-template-rows: 1fr;
 }
 
 .contact .contact-right .bottom .btn {
@@ -549,6 +558,7 @@ footer .copyright {
   border-radius: 0.25rem;
   font-family: "Raleway", sans-serif;
   font-size: 0.9rem;
+  margin: 0.15rem 0;
 }
 
 /* Media Queries */
@@ -656,7 +666,7 @@ footer .copyright {
 
   .contact .contact-left > .details > h5 {
     word-spacing: 0.04rem;
-    font-size: 0.55rem;
+    font-size: 0.63rem;
   }
 
   .contact .contact-right {
@@ -669,6 +679,19 @@ footer .copyright {
   }
 
   .contact .contact-right .top > h5 {
+    font-size: 0.7rem;
+  }
+
+  .contact .contact-left > .social > ul > li > a {
+    font-size: 0.8rem;
+    padding: 0.35rem;
+  }
+
+  .form-control {
+    font-size: 0.7rem;
+  }
+
+  .contact .contact-right .bottom .btn {
     font-size: 0.7rem;
   }
 }
