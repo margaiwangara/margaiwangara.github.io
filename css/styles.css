@@ -348,7 +348,7 @@ header .header-content h3 {
   box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 3rem auto;
   box-sizing: border-box;
-  background: #e5b8a4;
+  background: #eee5e9;
   position: relative;
   color: var(--secondary);
 }
