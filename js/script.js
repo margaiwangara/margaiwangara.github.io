@@ -41,4 +41,24 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  // Form handling
+  const contactForm = document.querySelector(".contact-form");
+  contactForm.addEventListener("submit", e => {
+    e.preventDefault();
+    const formData = {};
+    const name = document.querySelector("input[type='text']").value;
+    const email = document.querySelector("input[type='email']").value;
+    const message = document.querySelector("textarea").value;
+
+    // Assign to object
+    formData.name = name;
+    formData.email = email;
+    formData.message = message;
+
+    console.log(formData.name);
+  });
+
+  // Some Redux code here
+  // Sample fetch request
 });

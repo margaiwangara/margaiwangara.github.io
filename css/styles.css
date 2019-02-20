@@ -451,7 +451,7 @@ header .header-content h3 {
   text-transform: capitalize;
 }
 
-.contact .contact-right .bottom {
+.contact .contact-right .bottom form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -550,6 +550,35 @@ footer .copyright {
 .btn-secondary {
   background: var(--secondary);
   margin: 0.2rem 0;
+}
+
+.alert {
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--primary);
+  margin: 0.2rem 0;
+  padding: 0.2rem 0.3rem;
+  font-size: 0.8rem;
+  animation: 3s slideanim;
+  overflow-y: hidden;
+  border-left: solid 8px;
+  border-radius: 0.25rem;
+}
+
+.alert-success {
+  border-left-color: green;
+}
+
+.alert-danger {
+  border-left-color: red;
+}
+@keyframes slideanim {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 50px;
+  }
 }
 
 .form-control {
